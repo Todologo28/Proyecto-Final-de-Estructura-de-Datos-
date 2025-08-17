@@ -1,0 +1,310 @@
+{
+  "usuarios": [
+    {
+      "id": "USER_1",
+      "nombre": "elizardo",
+      "region": "Panamá",
+      "created_at": "2025-08-06T18:36:20.386868"
+    },
+    {
+      "id": "USER_2",
+      "nombre": "Ana",
+      "region": "Panamá",
+      "created_at": "2025-08-12T12:22:46.461255"
+    },
+    {
+      "id": "USER_3",
+      "nombre": "Ana De Gonzalez",
+      "region": "Panamá",
+      "created_at": "2025-08-12T12:27:00.030123"
+    },
+    {
+      "id": "USER_4",
+      "nombre": "a",
+      "region": "Bocas del Toro",
+      "created_at": "2025-08-12T12:29:20.709209"
+    },
+    {
+      "id": "USER_5",
+      "nombre": "peep",
+      "region": "Bocas del Toro",
+      "created_at": "2025-08-12T12:39:31.831601"
+    },
+    {
+      "id": "USER_6",
+      "nombre": "juan ",
+      "region": "Bocas del Toro",
+      "created_at": "2025-08-12T13:29:13.629696"
+    },
+    {
+      "id": "USER_7",
+      "nombre": "Ana",
+      "region": "Panamá",
+      "created_at": "2025-08-12T13:38:48.820366"
+    },
+    {
+      "id": "USER_8",
+      "nombre": "alexa",
+      "region": "Comarca Wargandí",
+      "created_at": "2025-08-12T13:48:10.862366"
+    },
+    {
+      "id": "USER_9",
+      "nombre": "Eynar",
+      "region": "Panamá",
+      "created_at": "2025-08-12T14:49:01.040592"
+    },
+    {
+      "id": "USER_10",
+      "nombre": "Panamam",
+      "region": "Herrera",
+      "created_at": "2025-08-12T14:51:51.325268"
+    }
+  ],
+  "alertas": [
+    {
+      "id": "ALERTA_EMERGENCY_20250806_183645",
+      "descripcion": "Violaron a mi perro ",
+      "ubicacion": "Tumba muerto ",
+      "region": "Panamá",
+      "tipo": "alerta",
+      "categoria": "emergency",
+      "user_id": "USER_1",
+      "created_at": "2025-08-06T18:36:45.760767",
+      "activa": true
+    },
+    {
+      "id": "ALERTA_ACCIDENT_20250812_122327",
+      "descripcion": "Choque en calle 50",
+      "ubicacion": "calle 50. ciudad de panama",
+      "region": "Panamá",
+      "tipo": "alerta",
+      "categoria": "accident",
+      "user_id": "USER_2",
+      "created_at": "2025-08-12T12:23:27.401039",
+      "activa": true
+    },
+    {
+      "id": "ALERTA_TRAFFIC_20250812_122759",
+      "descripcion": "choque con camion y moto ",
+      "ubicacion": "Juan diaz, calle 5",
+      "region": "Panamá",
+      "tipo": "alerta",
+      "categoria": "traffic",
+      "user_id": "USER_3",
+      "created_at": "2025-08-12T12:27:59.262112",
+      "activa": true
+    },
+    {
+      "id": "ALERTA_EMERGENCIA_20250812_122940",
+      "descripcion": "2",
+      "ubicacion": "2",
+      "region": "Chiriquí",
+      "tipo": "alerta",
+      "categoria": "emergencia",
+      "user_id": "USER_4",
+      "created_at": "2025-08-12T12:29:40.496043",
+      "activa": true
+    },
+    {
+      "id": "ALERTA_CRIME_20250812_124002",
+      "descripcion": "c",
+      "ubicacion": "c",
+      "region": "Bocas del Toro",
+      "tipo": "alerta",
+      "categoria": "crime",
+      "user_id": "USER_5",
+      "created_at": "2025-08-12T12:40:02.502614",
+      "activa": true
+    },
+    {
+      "id": "ALERTA_TRAFFIC_20250812_134905",
+      "descripcion": "cuello de botella corredor",
+      "ubicacion": "corredor norte",
+      "region": "Panamá",
+      "tipo": "alerta",
+      "categoria": "traffic",
+      "user_id": "USER_8",
+      "created_at": "2025-08-12T13:49:05.943454",
+      "activa": true
+    },
+    {
+      "id": "ALERTA_ACCIDENT_20250812_144940",
+      "descripcion": "suicidio ",
+      "ubicacion": "Brisas del golf ",
+      "region": "Panamá",
+      "tipo": "alerta",
+      "categoria": "accident",
+      "user_id": "USER_9",
+      "created_at": "2025-08-12T14:49:40.826341",
+      "activa": true
+    }
+  ],
+  "conexiones": [
+    {
+      "origen": "USER_1",
+      "destino": "REGION_PANAMÁ",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    },
+    {
+      "origen": "ALERTA_EMERGENCY_20250806_183645",
+      "destino": "TIPO_EMERGENCY",
+      "tipo": "alerta_categoria"
+    },
+    {
+      "origen": "ALERTA_EMERGENCY_20250806_183645",
+      "destino": "REGION_PANAMÁ",
+      "tipo": "alerta_region"
+    },
+    {
+      "origen": "USER_1",
+      "destino": "ALERTA_EMERGENCY_20250806_183645",
+      "tipo": "usuario_alerta"
+    },
+    {
+      "origen": "USER_2",
+      "destino": "REGION_PANAMÁ",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    },
+    {
+      "origen": "ALERTA_ACCIDENT_20250812_122327",
+      "destino": "TIPO_ACCIDENT",
+      "tipo": "alerta_categoria"
+    },
+    {
+      "origen": "ALERTA_ACCIDENT_20250812_122327",
+      "destino": "REGION_PANAMÁ",
+      "tipo": "alerta_region"
+    },
+    {
+      "origen": "USER_2",
+      "destino": "ALERTA_ACCIDENT_20250812_122327",
+      "tipo": "usuario_alerta"
+    },
+    {
+      "origen": "USER_3",
+      "destino": "REGION_PANAMÁ",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    },
+    {
+      "origen": "ALERTA_TRAFFIC_20250812_122759",
+      "destino": "TIPO_TRAFFIC",
+      "tipo": "alerta_categoria"
+    },
+    {
+      "origen": "ALERTA_TRAFFIC_20250812_122759",
+      "destino": "REGION_PANAMÁ",
+      "tipo": "alerta_region"
+    },
+    {
+      "origen": "USER_3",
+      "destino": "ALERTA_TRAFFIC_20250812_122759",
+      "tipo": "usuario_alerta"
+    },
+    {
+      "origen": "USER_4",
+      "destino": "REGION_BOCAS DEL TORO",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    },
+    {
+      "origen": "ALERTA_EMERGENCIA_20250812_122940",
+      "destino": "TIPO_EMERGENCIA",
+      "tipo": "alerta_categoria"
+    },
+    {
+      "origen": "ALERTA_EMERGENCIA_20250812_122940",
+      "destino": "REGION_CHIRIQUÍ",
+      "tipo": "alerta_region"
+    },
+    {
+      "origen": "USER_4",
+      "destino": "ALERTA_EMERGENCIA_20250812_122940",
+      "tipo": "usuario_alerta"
+    },
+    {
+      "origen": "USER_5",
+      "destino": "REGION_BOCAS DEL TORO",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    },
+    {
+      "origen": "ALERTA_CRIME_20250812_124002",
+      "destino": "TIPO_CRIME",
+      "tipo": "alerta_categoria"
+    },
+    {
+      "origen": "ALERTA_CRIME_20250812_124002",
+      "destino": "REGION_BOCAS DEL TORO",
+      "tipo": "alerta_region"
+    },
+    {
+      "origen": "USER_5",
+      "destino": "ALERTA_CRIME_20250812_124002",
+      "tipo": "usuario_alerta"
+    },
+    {
+      "origen": "USER_6",
+      "destino": "REGION_BOCAS DEL TORO",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    },
+    {
+      "origen": "USER_7",
+      "destino": "REGION_PANAMÁ",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    },
+    {
+      "origen": "USER_8",
+      "destino": "REGION_COMARCA WARGANDÍ",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    },
+    {
+      "origen": "ALERTA_TRAFFIC_20250812_134905",
+      "destino": "TIPO_TRAFFIC",
+      "tipo": "alerta_categoria"
+    },
+    {
+      "origen": "ALERTA_TRAFFIC_20250812_134905",
+      "destino": "REGION_PANAMÁ",
+      "tipo": "alerta_region"
+    },
+    {
+      "origen": "USER_8",
+      "destino": "ALERTA_TRAFFIC_20250812_134905",
+      "tipo": "usuario_alerta"
+    },
+    {
+      "origen": "USER_9",
+      "destino": "REGION_PANAMÁ",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    },
+    {
+      "origen": "ALERTA_ACCIDENT_20250812_144940",
+      "destino": "TIPO_ACCIDENT",
+      "tipo": "alerta_categoria"
+    },
+    {
+      "origen": "ALERTA_ACCIDENT_20250812_144940",
+      "destino": "REGION_PANAMÁ",
+      "tipo": "alerta_region"
+    },
+    {
+      "origen": "USER_9",
+      "destino": "ALERTA_ACCIDENT_20250812_144940",
+      "tipo": "usuario_alerta"
+    },
+    {
+      "origen": "USER_10",
+      "destino": "REGION_HERRERA",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    }
+  ]
+}
