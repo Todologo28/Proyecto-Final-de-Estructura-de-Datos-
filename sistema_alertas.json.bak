@@ -59,12 +59,18 @@
       "nombre": "Panamam",
       "region": "Herrera",
       "created_at": "2025-08-12T14:51:51.325268"
+    },
+    {
+      "id": "USER_11",
+      "nombre": "as",
+      "region": "Bocas del Toro",
+      "created_at": "2025-08-12T14:54:13.905225"
     }
   ],
   "alertas": [
     {
       "id": "ALERTA_EMERGENCY_20250806_183645",
-      "descripcion": "Violaron a mi perro ",
+      "descripcion": "persona con paro cardiaco ",
       "ubicacion": "Tumba muerto ",
       "region": "Panamá",
       "tipo": "alerta",
@@ -101,7 +107,7 @@
       "ubicacion": "2",
       "region": "Chiriquí",
       "tipo": "alerta",
-      "categoria": "emergencia",
+      "categoria": "emergency",
       "user_id": "USER_4",
       "created_at": "2025-08-12T12:29:40.496043",
       "activa": true
@@ -212,7 +218,7 @@
     },
     {
       "origen": "ALERTA_EMERGENCIA_20250812_122940",
-      "destino": "TIPO_EMERGENCIA",
+      "destino": "TIPO_EMERGENCY",
       "tipo": "alerta_categoria"
     },
     {
@@ -305,6 +311,13 @@
       "destino": "REGION_HERRERA",
       "bidireccional": true,
       "tipo": "usuario_region"
+    },
+    {
+      "origen": "USER_11",
+      "destino": "REGION_BOCAS DEL TORO",
+      "bidireccional": true,
+      "tipo": "usuario_region"
     }
   ]
 }
+

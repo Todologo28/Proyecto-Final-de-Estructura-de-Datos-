@@ -65,6 +65,12 @@
       "nombre": "as",
       "region": "Bocas del Toro",
       "created_at": "2025-08-12T14:54:13.905225"
+    },
+    {
+      "id": "USER_12",
+      "nombre": "Eynar Gonzalez",
+      "region": "Panamá Oeste",
+      "created_at": "2025-08-18T23:30:12.881677"
     }
   ],
   "alertas": [
@@ -107,7 +113,7 @@
       "ubicacion": "2",
       "region": "Chiriquí",
       "tipo": "alerta",
-      "categoria": "emergencia",
+      "categoria": "emergecy",
       "user_id": "USER_4",
       "created_at": "2025-08-12T12:29:40.496043",
       "activa": true
@@ -218,7 +224,7 @@
     },
     {
       "origen": "ALERTA_EMERGENCIA_20250812_122940",
-      "destino": "TIPO_EMERGENCIA",
+      "destino": "TIPO_EMERGENCY",
       "tipo": "alerta_categoria"
     },
     {
@@ -315,6 +321,12 @@
     {
       "origen": "USER_11",
       "destino": "REGION_BOCAS DEL TORO",
+      "bidireccional": true,
+      "tipo": "usuario_region"
+    },
+    {
+      "origen": "USER_12",
+      "destino": "REGION_PANAMÁ OESTE",
       "bidireccional": true,
       "tipo": "usuario_region"
     }
